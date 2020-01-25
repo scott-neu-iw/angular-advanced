@@ -1,4 +1,4 @@
-# StateManagementWorkshop
+# State Management Workshop
 ### Slide 8 - Subjects
 https://rxjs-dev.firebaseapp.com/guide/subject
 https://angular.io/guide/component-interaction
