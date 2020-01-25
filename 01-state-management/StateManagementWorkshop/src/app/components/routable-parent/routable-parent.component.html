@@ -1,0 +1,12 @@
+<div class="container-fluid outline bg-1">
+    <div class="component-title">Top Level -- RoutableParent Component</div>
+    <div class="action-detected">{{actionDetected}}</div>
+    <div class="row row-space">
+      <div class="col-9">
+        <app-left-side (actionClicked)="clickAction($event)"></app-left-side>
+      </div>
+      <div class="col-3">
+        <app-right-side [value]="value" ></app-right-side>
+      </div>
+  </div>
+</div>
