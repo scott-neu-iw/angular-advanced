@@ -1,0 +1,5 @@
+<ul class="route-menu">
+  <li *ngFor="let route of routes"><a [routerLink]="[route.path]">{{ route.path }}</a></li>
+  <li><a [routerLink]="['lazy']">Lazy Component</a></li>
+  <li><a [routerLink]="['asdasdas dasd']">Gibberish Route</a></li>
+</ul>
