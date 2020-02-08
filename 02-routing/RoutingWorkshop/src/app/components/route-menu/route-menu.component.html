@@ -1,5 +1,13 @@
 <ul class="route-menu">
-  <li *ngFor="let route of routes"><a [routerLink]="[route.path]">{{ route.path }}</a></li>
-  <li><a [routerLink]="['lazy']">Lazy Component</a></li>
-  <li><a [routerLink]="['asdasdas dasd']">Gibberish Route</a></li>
+  <li><a [routerLink]="['/']">Home</a></li>
+  <li *ngFor="let route of routes">
+    <a [routerLink]="[route.path]">{{ route.path }}</a>
+    <ul *ngIf="route.children">
+      <li *ngFor="let child of route.children">
+        <a [routerLink]="[route.path, child.path]">{{ route.path }}/{{ child.path }}</a>
+      </li>
+    </ul>
+  </li>
+  <!-- <li><a [routerLink]="['lazy']">Lazy Component</a></li> -->
+  <!-- <li><a [routerLink]="['this','is','a','bad','route']">Bad Route Route</a></li> -->
 </ul>
