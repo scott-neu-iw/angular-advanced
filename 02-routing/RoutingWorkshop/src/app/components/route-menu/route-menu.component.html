@@ -1,13 +1,12 @@
 <ul class="route-menu">
   <li><a [routerLink]="['/']">Home</a></li>
-  <li *ngFor="let route of routes">
-    <a [routerLink]="[route.path]">{{ route.path }}</a>
-    <ul *ngIf="route.children">
-      <li *ngFor="let child of route.children">
-        <a [routerLink]="[route.path, child.path]">{{ route.path }}/{{ child.path }}</a>
-      </li>
-    </ul>
-  </li>
-  <!-- <li><a [routerLink]="['lazy']">Lazy Component</a></li> -->
-  <!-- <li><a [routerLink]="['this','is','a','bad','route']">Bad Route Route</a></li> -->
+  <li><a [routerLink]="['/component']">Component</a></li>
+  <li><a [routerLink]="['/redirect']">Redirect</a></li>
+  <li><a [routerLink]="['/paramquery', 1]" [queryParams]="{t: 101}">Params & Query (1)</a></li>
+  <li><a [routerLink]="['/paramquery', 2]" [queryParams]="{t: 102}">Params & Query (2)</a></li>
+  <li><a [routerLink]="['/dynamic', 1]">Dynamic (dynamic1)</a></li>
+  <li><a [routerLink]="['/dynamic', 2]">Dynamic (dynamic2)</a></li>
+  <li><a [routerLink]="['/perms', 'user']">Permissions (user)</a></li>
+  <li><a [routerLink]="['/perms', 'admin']">Permissions (admin)</a></li>
+  <li><a [routerLink]="['/lazy']">Lzxy Loaded Module</a></li>
 </ul>

@@ -8,10 +8,7 @@ import { Routes, Router } from '@angular/router';
 })
 export class RouteMenuComponent implements OnInit {
 
-  public routes: Routes;
-
-  constructor(private router: Router) {
-    this.routes = this.router.config.filter(i => i.path !== '**' && i.path !== '' && !i.path.includes('lazy') );
+  constructor() {
   }
 
   ngOnInit() {

@@ -11,6 +11,7 @@ import { RoutePermissionedComponent } from './components/route-permissioned/rout
 import { RouteMenuComponent } from './components/route-menu/route-menu.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ParamQueryComponent } from './components/param-query/param-query.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     RoutePermissionedComponent,
     RouteMenuComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ParamQueryComponent
   ],
   imports: [
     BrowserModule,
