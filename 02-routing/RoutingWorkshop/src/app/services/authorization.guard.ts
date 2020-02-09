@@ -20,5 +20,4 @@ export class AuthorizationGuard implements CanActivate {
         return false;
       }
   }
-
 }
