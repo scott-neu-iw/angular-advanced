@@ -17,5 +17,4 @@ export class ParamQueryComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(i => this.id = Number(i.get('id')));
     this.activatedRoute.queryParamMap.subscribe(i => this.t = i.get('t'));
   }
-
 }

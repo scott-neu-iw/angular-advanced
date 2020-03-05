@@ -15,18 +15,29 @@ const routes: Routes = [
   // { path: 'paramquery/:id', component: ParamQueryComponent },
   // { path: 'dynamic',
   //   children: [
-  //     { path: '1', component: RouteConfigurableComponent, data: { componentType: 'dynamic1' } },
-  //     { path: '2', component: RouteConfigurableComponent, data: { componentType: 'dynamic2' } },
+  //     { path: '1',
+  //       component: RouteConfigurableComponent,
+  //       data: { componentType: 'dynamic1' } },
+  //     { path: '2',
+  //       component: RouteConfigurableComponent,
+  //       data: { componentType: 'dynamic2' } },
   //   ]
   // },
-  // { path: 'perms/user', component: RoutePermissionedComponent, data: { requiredRole: 'user' }, canActivate: [AuthorizationGuard] },
-  // { path: 'perms/admin', component: RoutePermissionedComponent, data: { requiredRole: 'admin' }, canActivate: [AuthorizationGuard] },
-  // { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then(mod => mod.LazyModule),  },
+  // { path: 'perms/user',
+  //   component: RoutePermissionedComponent,
+  //   data: { requiredRole: 'user' },
+  //   canActivate: [AuthorizationGuard] },
+  // { path: 'perms/admin',
+  //   component: RoutePermissionedComponent,
+  //   data: { requiredRole: 'admin' },
+  //   canActivate: [AuthorizationGuard] },
+  // { path: 'lazy',
+  //   loadChildren: () => import('./lazy/lazy.module').then(mod => mod.LazyModule),  },
   // { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {enableTracing: true})],
+  imports: [RouterModule.forRoot(routes, {enableTracing: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

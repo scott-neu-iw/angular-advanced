@@ -14,5 +14,4 @@ export class RouteConfigurableComponent implements OnInit {
   ngOnInit() {
     this.actRoute.data.subscribe(i => this.componentType = i.componentType);
   }
-
 }
